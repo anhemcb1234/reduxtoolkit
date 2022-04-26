@@ -1,11 +1,13 @@
+import * as TYPE from '../../store/Type'
+
 const initState = {
         priority: [],
 }
 const homeReducer = (state = initState, action) => {
     switch(action.type) {
-        case 'home/product':
+        case TYPE.HOME_PRODUCT:
             return {
-                    ...state,
+                    
                     priority: [...action.payload]
                 }
     default: 

@@ -1,15 +1,16 @@
+import * as TYPE from '../store/Type'
 export const homeProduct = (data) => {
     return {
-    type:'home/product',
+    type:TYPE.HOME_PRODUCT,
     payload: data
 }}
 export const productDetail = (data) => {
     return {
-    type:'getAllProducts',
+    type:TYPE.GET_ALLPRODUCTS,
     payload: data
 }}
 export const getBag = (data) => {
     return {
-    type:'getBag',
+    type:TYPE.GET_BAG,
     payload: data
 }}

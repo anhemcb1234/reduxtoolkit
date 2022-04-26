@@ -1,3 +1,4 @@
+import * as TYPE from '../../store/Type'
 const initState = {
         priority: [],
         price: 0,
@@ -6,12 +7,12 @@ const initState = {
 }
 const productsReducer = (state = initState, action) => {
     switch(action.type) {
-        case 'getAllProducts':
+        case TYPE.GET_ALLPRODUCTS:
             return {
                     ...state,
                     priority: [...action.payload]
                 }
-        case 'getBag':
+        case TYPE.GET_BAG:
                 return {
                         ...state,
                         products: [...action.payload],
