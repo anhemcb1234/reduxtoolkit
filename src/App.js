@@ -5,20 +5,18 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import About from './components/About';
+import Home from './components/Home/Home';
+import ProductDetail from './components/ProductDetail/ProductDetail';
+
 export default function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<About />} >
-        
-          </Route>
-
-        </Routes>
-        {/* <Link to={`/about?name=mien&age=20`}>about</Link> */}
-      </BrowserRouter>
-
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/1" element={<ProductDetail />} />
+          </Routes>
+        </BrowserRouter>
     </div>
   )
 }
